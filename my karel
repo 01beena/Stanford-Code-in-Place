@@ -1,0 +1,13 @@
+from karel.stanfordkarel import *
+
+def main():
+    # this will pass 80% of the time
+    if random(0.8):
+        # create a blue square
+        paint_corner("blue")
+    # checks if the current square is blue
+    if corner_color_is("blue"):
+        move()
+
+if __name__ == '__main__':
+    main()
